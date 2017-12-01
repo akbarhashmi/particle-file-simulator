@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5472D4601FCEF04200B71509 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5472D45F1FCEF04200B71509 /* main.cpp */; };
+		5472D4681FCEF3CE00B71509 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5472D4671FCEF3CE00B71509 /* libSDL2-2.0.0.dylib */; };
+		5472D46B1FCFF4A700B71509 /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5472D4691FCFF4A700B71509 /* Screen.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		5472D45C1FCEF04200B71509 /* particle-fire-simulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "particle-fire-simulator"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5472D45F1FCEF04200B71509 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		5472D4671FCEF3CE00B71509 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../opt/local/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		5472D4691FCFF4A700B71509 /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
+		5472D46A1FCFF4A700B71509 /* Screen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Screen.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5472D4681FCEF3CE00B71509 /* libSDL2-2.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +49,7 @@
 			children = (
 				5472D45E1FCEF04200B71509 /* particle-fire-simulator */,
 				5472D45D1FCEF04200B71509 /* Products */,
+				5472D4661FCEF3CD00B71509 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +65,18 @@
 			isa = PBXGroup;
 			children = (
 				5472D45F1FCEF04200B71509 /* main.cpp */,
+				5472D4691FCFF4A700B71509 /* Screen.cpp */,
+				5472D46A1FCFF4A700B71509 /* Screen.hpp */,
 			);
 			path = "particle-fire-simulator";
+			sourceTree = "<group>";
+		};
+		5472D4661FCEF3CD00B71509 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5472D4671FCEF3CE00B71509 /* libSDL2-2.0.0.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5472D4601FCEF04200B71509 /* main.cpp in Sources */,
+				5472D46B1FCFF4A700B71509 /* Screen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +234,11 @@
 		5472D4641FCEF04200B71509 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -223,6 +246,11 @@
 		5472D4651FCEF04200B71509 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
