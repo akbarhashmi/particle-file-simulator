@@ -274,6 +274,7 @@
 				5472D4651FCEF04200B71509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

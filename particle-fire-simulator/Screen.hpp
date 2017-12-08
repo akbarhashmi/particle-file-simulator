@@ -24,10 +24,12 @@ namespace caveofprogramming {
         Uint32 *m_buffer;
         
     public:
-        Screen();
-        bool init();
+        Screen(); //constructor
+        bool init(); //
         bool processEvents();
         void close();
+        void update();
+        void setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue);
     };
     
 } /* namespace caveofprogramming */

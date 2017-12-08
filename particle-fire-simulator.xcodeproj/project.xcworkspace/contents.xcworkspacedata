@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:particle-fire-simulator.xcodeproj">
+      location = "group:../../../untitled folder/MyPlayground.playground">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
