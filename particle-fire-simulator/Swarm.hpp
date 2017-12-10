@@ -1,14 +1,25 @@
-//
-//  Swarm.hpp
-//  particle-fire-simulator
-//
-//  Created by Akbar Hashmi on 12/10/17.
-//  Copyright © 2017 Akbar Hashmi. All rights reserved.
-//
 
-#ifndef Swarm_hpp
-#define Swarm_hpp
+#ifndef SWARM_H_
+#define SWARM_H_
 
-#include <stdio.h>
+#include "Particle.hpp"
 
-#endif /* Swarm_hpp */
+namespace caveofprogramming {
+    
+    class Swarm {
+    public:
+        const static int NPARTICLES = 5000;
+        
+    private:
+        Particle * m_pParticles;
+        
+    public:
+        Swarm();
+        virtual ~Swarm();
+        
+        const Particle * const getParticles() { return m_pParticles; };
+    };
+    
+} /* namespace caveofprogramming */
+
+#endif /* SWARM_H_ */

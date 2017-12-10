@@ -10,6 +10,8 @@
 		5472D4601FCEF04200B71509 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5472D45F1FCEF04200B71509 /* main.cpp */; };
 		5472D4681FCEF3CE00B71509 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5472D4671FCEF3CE00B71509 /* libSDL2-2.0.0.dylib */; };
 		5472D46B1FCFF4A700B71509 /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5472D4691FCFF4A700B71509 /* Screen.cpp */; };
+		54AA2B9C1FDD9D8D00589736 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54AA2B9A1FDD9D8D00589736 /* Particle.cpp */; };
+		54AA2B9F1FDD9DA300589736 /* Swarm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 54AA2B9D1FDD9DA300589736 /* Swarm.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,10 @@
 		5472D4671FCEF3CE00B71509 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../opt/local/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 		5472D4691FCFF4A700B71509 /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
 		5472D46A1FCFF4A700B71509 /* Screen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Screen.hpp; sourceTree = "<group>"; };
+		54AA2B9A1FDD9D8D00589736 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		54AA2B9B1FDD9D8D00589736 /* Particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
+		54AA2B9D1FDD9DA300589736 /* Swarm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Swarm.cpp; sourceTree = "<group>"; };
+		54AA2B9E1FDD9DA300589736 /* Swarm.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Swarm.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				5472D45F1FCEF04200B71509 /* main.cpp */,
 				5472D4691FCFF4A700B71509 /* Screen.cpp */,
 				5472D46A1FCFF4A700B71509 /* Screen.hpp */,
+				54AA2B9A1FDD9D8D00589736 /* Particle.cpp */,
+				54AA2B9B1FDD9D8D00589736 /* Particle.hpp */,
+				54AA2B9D1FDD9DA300589736 /* Swarm.cpp */,
+				54AA2B9E1FDD9DA300589736 /* Swarm.hpp */,
 			);
 			path = "particle-fire-simulator";
 			sourceTree = "<group>";
@@ -136,7 +146,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54AA2B9F1FDD9DA300589736 /* Swarm.cpp in Sources */,
 				5472D4601FCEF04200B71509 /* main.cpp in Sources */,
+				54AA2B9C1FDD9D8D00589736 /* Particle.cpp in Sources */,
 				5472D46B1FCFF4A700B71509 /* Screen.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
