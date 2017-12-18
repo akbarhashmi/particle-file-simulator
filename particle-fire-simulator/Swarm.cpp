@@ -1,4 +1,3 @@
-
 #include "Swarm.hpp"
 
 namespace caveofprogramming {
@@ -17,7 +16,5 @@ namespace caveofprogramming {
             m_pParticles[i].update();
         }
     }
-
-    
     
 } /* namespace caveofprogramming */
