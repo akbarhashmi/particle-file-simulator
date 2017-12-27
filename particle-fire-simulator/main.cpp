@@ -50,6 +50,13 @@ int main() {
             break;
         }
     }
+    /*
+     if (screen.processEvents() == true) {
+     continue;
+     
+     }
+
+     */
     
     screen.close();
     
