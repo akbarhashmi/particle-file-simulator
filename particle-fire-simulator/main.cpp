@@ -52,6 +52,7 @@ int main() {
     }
     /*
      if (screen.processEvents() == true) {
+     int xyz = (particle.m_x + 1) * Screen::Screen _width;
      continue;
      
      }
