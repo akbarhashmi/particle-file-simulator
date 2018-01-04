@@ -52,7 +52,7 @@ int main() {
     }
     /*
      if (screen.processEvents() == true) {
-     int xyz = (particle.m_x + 10) * Screen::Screen _width;
+     int xyz = (particle.m_x + 10.99) * Screen::Screen _width;
      continue;
      
      }
